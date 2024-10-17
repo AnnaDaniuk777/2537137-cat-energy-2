@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Анна Данюк](https://up.htmlacademy.ru/adaptive-individual/2/user/2537137).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Комнатная] (https://htmlacademy.ru/profile/id215761).
 
 ---
 
