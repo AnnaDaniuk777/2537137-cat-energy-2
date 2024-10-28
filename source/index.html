@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Интернет-магазин "Кэт энерджи"</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo main-logo">
+      <img class="main-header__logo-image" src="images/logo-pic.svg" width="70" height="59" alt="Картинка-логотип онлайн-магазина Кэт энерджи">
+      <img class="logo-image" src="images/logo-text.svg" width="118" height="21" alt="Логотип онлайн-магазина Кэт энерджи">
+    </a>
+    <nav class="main-nav">
+      <button class="main__nav-toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a href="index.html">главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <section class="hero">
+      <div class="hero-wrapper hero-wrapper--description">
+        <h1 class="hero-title title__feature">Функциональное питание для котов</h1>
+        <p class="hero-description feature-text">Занялся собой? Займись котом!</p>
+        <a class="button hero-button" href="modal.html">подобрать программу</a>
+      </div>
+      <div class="hero-wrapper--product">
+        <img class="hero-image" src="images/product-index-hero.png" width="552" height="499" alt="Питание Cat Energy PRO со вкусом курицы">
+      </div>
+    </section>
+
+  </main>
+</body>
+
 </html>
