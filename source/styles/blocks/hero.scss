@@ -11,11 +11,17 @@
 }
 
 .hero__title {
-
+  font-family: $font-secondary;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
 }
 
 .hero__description {
-
+  font-family: $font-secondary;
+  line-height: 14px;
 }
 
 .hero__wrapper {
@@ -23,5 +29,9 @@
 }
 
 .hero__button {
-
+  font-family: $font-secondary;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
 }

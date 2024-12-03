@@ -11,11 +11,18 @@
 }
 
 .address__text {
-
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
 }
 
 .address__direction {
-
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
 }
 
 .address__map-wrapper {

@@ -15,19 +15,28 @@
 }
 
 .card__link-title {
-
+  text-decoration: none;
+  color: #222222;
 }
 
 .card__title {
-
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 0;
 }
 
 .card__list {
-
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .card__item {
-
+  font-size: 12px;
+  line-height: 18px;
+  color: #444444;
 }
 
 .card__type {
@@ -47,10 +56,17 @@
 }
 
 .card__more {
-
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .card__text {
-
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
 }
 

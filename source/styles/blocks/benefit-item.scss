@@ -3,15 +3,19 @@
 }
 
 .benefit-item__name {
-
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
 }
 
-.benefit-item__text {
-
-}
-
+.benefit-item__text,
 .benefit-item__value {
-
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
 }
 
 .benefit-item__button {

@@ -5,12 +5,12 @@
 }
 
 body {
-  font-family: "Lato", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-family: $font-primary;
+  font-size: 14px;
+  line-height: 18px;
   font-weight: 400;
-  color: #000000;
-  background-color: #ffffff;
+  color: $primary-color;
+  background-color: $background-color;
 }
 
 .visually-hidden {

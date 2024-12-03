@@ -1,7 +1,10 @@
 .promo-block {
-
+  background-color: $basic-green;
 }
 
 .promo-block__text {
-
+  color: $secondary-color;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
 }

@@ -7,11 +7,17 @@ benefits__container {
 }
 
 .benefits__title {
-
+  font-family: $font-secondary;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin: 0;
 }
 
 .benefits__list {
-
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .benefits__item {
@@ -35,5 +41,5 @@ benefits__container {
 }
 
 .benefits__description {
-
+  color: #444444;
 }
