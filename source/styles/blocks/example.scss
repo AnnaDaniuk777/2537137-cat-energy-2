@@ -1,7 +1,7 @@
 .example {
-  background-color: #d9d9d9;
+  background-color: $extra-background;
 }
-
+/*
 .example__container {
 
 }
@@ -9,7 +9,7 @@
 .example__text-wrapper {
 
 }
-
+*/
 .example__title {
   font-family: $font-secondary;
   font-size: 36px;
@@ -19,20 +19,21 @@
 }
 
 .example__text {
-  color: #444444;
+  color: $additional-color;
 }
-
+/*
 .example__stats {
 
 }
-
+*/
 .example__text-value {
   font-family: $font-secondary;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
 }
-
+/*
 .example__price {
 
 }
+*/

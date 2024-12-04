@@ -1,3 +1,4 @@
+/*
 .stats {
 
 }
@@ -5,7 +6,7 @@
 .stats__item {
 
 }
-
+*/
 .stats__value {
   font-family: $font-secondary;
   font-size: 24px;
@@ -15,5 +16,5 @@
 .stats__definition {
   font-size: 12px;
   line-height: 12px;
-  color: #444444;
+  color: $additional-color;
 }

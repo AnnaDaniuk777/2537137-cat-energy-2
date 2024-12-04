@@ -1,3 +1,4 @@
+/*
 .card {
 
 }
@@ -13,10 +14,10 @@
 .card__descritpion {
 
 }
-
+*/
 .card__link-title {
   text-decoration: none;
-  color: #222222;
+  color: $variable-color;
 }
 
 .card__title {
@@ -36,9 +37,9 @@
 .card__item {
   font-size: 12px;
   line-height: 18px;
-  color: #444444;
+  color: $additional-color;
 }
-
+/*
 .card__type {
 
 }
@@ -54,12 +55,12 @@
 .card--show-more {
 
 }
-
+*/
 .card__more {
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $extra-color;
   text-transform: uppercase;
   margin: 0;
 }
@@ -67,6 +68,6 @@
 .card__text {
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $additional-color;
 }
 

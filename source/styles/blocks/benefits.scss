@@ -1,3 +1,4 @@
+/*
 .benefits {
 
 }
@@ -5,7 +6,7 @@
 benefits__container {
 
 }
-
+*/
 .benefits__title {
   font-family: $font-secondary;
   font-size: 36px;
@@ -19,7 +20,7 @@ benefits__container {
   padding: 0;
   list-style-type: none;
 }
-
+/*
 .benefits__item {
 
 }
@@ -39,7 +40,7 @@ benefits__container {
 .benefits__item--icon-clock {
 
 }
-
+*/
 .benefits__description {
-  color: #444444;
+  color: $additional-color;
 }

@@ -1,3 +1,4 @@
+/*
 .address {
 
 }
@@ -9,12 +10,12 @@
 .address__wrapper {
 
 }
-
+*/
 .address__text {
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $extra-color;
   text-transform: uppercase;
 }
 
@@ -22,9 +23,9 @@
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: $additional-color;
 }
-
+/*
 .address__map-wrapper {
 
 }
@@ -33,4 +34,4 @@
 .address__map-img {
 
 }
-
+*/

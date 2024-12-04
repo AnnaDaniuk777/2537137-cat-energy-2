@@ -1,3 +1,4 @@
+/*
 .option {
 
 }
@@ -5,7 +6,7 @@
 .option__container {
 
 }
-
+*/
 .option__list {
   margin: 0;
   padding: 0;
@@ -13,9 +14,9 @@
 }
 
 .option__item {
-  background-color: #d9d9d9;
+  background-color: $variable-background;
 }
-
+/*
 .option__item--icon-slim {
 
 }
@@ -23,7 +24,7 @@
 .option__item--icon-pro {
 
 }
-
+*/
 .option__title {
   font-family: $font-secondary;
   font-size: 24px;
@@ -34,7 +35,7 @@
 }
 
 .option__description {
-  color: #444444;
+  color: $additional-color;
 }
 
 .option__button {
