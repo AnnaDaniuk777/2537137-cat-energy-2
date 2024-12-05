@@ -16,9 +16,7 @@ benefits__container {
 }
 
 .benefits__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include reset;
 }
 /*
 .benefits__item {
