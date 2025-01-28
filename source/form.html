@@ -56,20 +56,19 @@
     <section class="form__main-section feature">
       <div class="feature__container container">
         <h1 class="feature__title">Подбор программы</h1>
-        <p class="feature__text">Заполните анкету, и мы подберем
-          программу питания для вашего кота</p>
+        <p class="feature__text">Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота</p>
         <form class="feature__form details" action="https://echo.htmlacademy.ru/" method="post">
           <div class="details__wrapper">
-            <label class="details__name" for="name">ИМЯ:<sup>*</sup></label>
-            <input class="details__name" type="text" id="name" name="auth-name" value="Барсик" required>
+            <label class="details__label" for="name">Имя:<sup>*</sup></label>
+            <input class="details__input" type="text" id="name" name="auth-name" value="Барсик" required>
           </div>
           <div class="details__wrapper">
-            <label class="details__weight" for="weight">Вес (кг):<sup>*</sup></label>
-            <input class="details__weight" type="number" id="weight" name="weight" value="7" required>
+            <label class="details__label" for="weight">Вес&nbsp;(кг):<sup>*</sup></label>
+            <input class="details__input" type="number" id="weight" name="weight" value="7" required>
           </div>
           <div class="details__wrapper">
-            <label class="details__age" for="age">Возраст (лет):</label>
-            <input class="details__age" type="number" id="age" name="age" value="7">
+            <label class="details__label" for="age">Возраст&nbsp;(лет):</label>
+            <input class="details__input" type="number" id="age" name="age" value="7">
           </div>
         </form>
         <fieldset class="feature__options options">
@@ -95,12 +94,12 @@
       <div class="form__container container">
         <h2 class="contact__title">Контактные данные (владельца кота)</h2>
         <div class="contact__wrapper">
-          <label class="contact__email" for="email">E-mail:<sup>*</sup></label>
-          <input class="contact__email" id="email" type="email" name="email" value="kuklachev@gmail.com" required>
+          <label class="contact__label" for="email">E &ndash;&nbsp;mail:<sup>*</sup></label>
+          <input class="contact__input" id="email" type="email" name="email" value="kuklachev@gmail.com" required>
         </div>
         <div class="contact__wrapper">
-          <label class="contact__phone" for="phone">Телефон:<sup>*</sup></label>
-          <input class="contact__phone" id="phone" type="tel" name="phone" value="8 (960) 900-60-90" required>
+          <label class="contact__label" for="phone">Телефон:<sup>*</sup></label>
+          <input class="contact__input" id="phone" type="tel" name="phone" value="8 (960) 900-60-90" required>
         </div>
       </div>
     </section>
@@ -108,6 +107,42 @@
       <div class="form__container container">
         <h2 class="comments__title">Комментарий</h2>
         <textarea class="comments__content" name="comment">Расскажите обо всех повадках кота</textarea>
+      </div>
+    </section>
+    <section class="form__extra extra">
+      <div class="form__container container">
+        <h2 class="extra__title">Дополнительно</h2>
+        <fieldset class="extra__products products">
+          <legend class="visually-hidden">Дополнительные товары</legend>
+          <ul class="products__list">
+            <li class="products__item">
+              <label class="products__label">
+                <input class="products__input" name="sweetener" type="checkbox" checked>
+                Сахарозаменитель
+              </label>
+            </li>
+            <li class="products__item">
+              <label class="products__label">
+                <input class="products__input" name="water" type="checkbox">
+                Питьевая вода
+              </label>
+            </li>
+            <li class="products__item">
+              <label class="products__label">
+                <input class="products__input" name="milk" type="checkbox">
+                Молоко
+              </label>
+            </li>
+            <li class="products__item">
+              <label class="products__label">
+                <input class="products__input" name="vitamins" type="checkbox">
+                Витамины
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button extra__button" type="submit">Отправить заявку</button>
+        <p class="extra__text"><sup>*</sup> — Обязательные поля</p>
       </div>
     </section>
     <section class="address address--catalog-page" data-test="contacts">
