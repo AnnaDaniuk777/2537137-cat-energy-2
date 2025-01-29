@@ -1,3 +1,79 @@
 .comments {
+  margin-bottom: 23px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.comments__container {
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.comments__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+}
+
+.comments::after {
+  @include pseudo;
+  height: 2px;
+  width: 100%;
+  background-color: $additional-background;
+  top: 15px;
+  right: 0;
+  z-index: 3;
+}
+
+.comments__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 38px;
+  display: inline-block;
+  position: relative;
+  z-index: 5;
+  background-color: $basic-background;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 87px;
+  }
+}
+
+.comments__content {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $additional-color;
+  padding: 14px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid #e7e7e7;
+  min-height: 150px;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px;
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 175px;
+  }
 }

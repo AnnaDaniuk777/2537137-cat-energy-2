@@ -1,3 +1,89 @@
 .extra {
-  display: block;
+  margin-bottom: 32px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.extra::after {
+  @include pseudo;
+  height: 2px;
+  width: 100%;
+  top: 15px;
+  right: 0;
+  background-color: $additional-background;
+  z-index: 2;
+}
+
+.extra__container {
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.extra__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 34px;
+  display: inline-block;
+  background-color: $basic-background;
+  position: relative;
+  z-index: 7;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 57px;
+  }
+}
+
+.extra__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+}
+
+.extra__button {
+  width: 100%;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px;
+  }
+}
+
+.extra__text {
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+  }
+}
+
+.extra__button-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 60px;
+  }
 }

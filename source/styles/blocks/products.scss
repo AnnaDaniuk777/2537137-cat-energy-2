@@ -1,3 +1,95 @@
 .products {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.products__list {
+  @include reset;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 60px;
+    margin-bottom: 52px;
+  }
+}
+
+.products__item:not(:last-child) {
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.products__item {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.products__label {
+  position: relative;
   display: block;
+  padding-left: 45px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
+}
+
+.products__input {
+  appearance: none;
+}
+
+.products__mark {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  left: 0;
+  top: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.products__name {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: $additional-color;
+  text-transform: uppercase;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.products__input[type="checkbox"]:checked + .products__mark::after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 14px;
+  background-image: url("../../icons/stack.svg#form-checkbox-arrow");
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 6px;
+  left: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 26px;
+    height: 26px;
+  }
 }

@@ -1,19 +1,71 @@
 .contact {
   margin-bottom: 24px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.contact::after {
+  @include pseudo;
+  width: 100%;
+  height: 2px;
+  background-color: $additional-background;
+  top: 15px;
+  left: 0;
+  z-index: 2;
+}
+
+.contact__container {
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 }
 
 .contact__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
+  font-weight: 400;
   margin: 0;
   margin-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+  background: $basic-background;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-bottom: 76px;
+  }
+}
+
+.contact__title br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .contact__wrapper {
   display: flex;
   align-items: center;
   gap: 13px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 20px;
+  }
 }
 
 .contact__wrapper:not(:last-child) {
@@ -26,6 +78,14 @@
   line-height: 18px;
   color: $additional-color;
   text-transform: uppercase;
+  display: block;
+  width: 78px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 83px;
+  }
 }
 
 .contact__input {
@@ -39,4 +99,10 @@
   width: 100%;
   padding-left: 10px;
   padding-right: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 36px 0 15px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

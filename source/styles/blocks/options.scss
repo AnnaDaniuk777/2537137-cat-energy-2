@@ -3,12 +3,16 @@
   margin: 0;
   padding: 22px 20px 19px;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 27px 27px;
+    border-bottom: none;
+    border: 1px solid #e7e7e7;
+  }
 }
 
 .options__list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
+  @include reset;
 }
 
 .options__label {
@@ -19,9 +23,18 @@
   text-transform: uppercase;
   position: relative;
   padding-left: 45px;
-  display: inline-block;
+  display: block;
   padding-top: 6px;
   padding-bottom: 6px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 60px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .options__item:not(:last-child) {
@@ -36,6 +49,11 @@
   border-radius: 50%;
   top: 0;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .options__label::after {
@@ -47,4 +65,11 @@
   border-radius: 50%;
   top: 8px;
   left: 8px;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 11px;
+  }
 }
