@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .comments__container {
@@ -13,6 +17,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -55,6 +63,10 @@
     padding-right: 40px;
     margin-bottom: 87px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 78px;
+  }
 }
 
 .comments__content {
@@ -75,5 +87,9 @@
     font-size: 20px;
     line-height: 30px;
     min-height: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 20px;
   }
 }

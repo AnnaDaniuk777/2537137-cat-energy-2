@@ -58,50 +58,63 @@
         <div class="feature__container container">
           <h1 class="feature__title">Подбор программы</h1>
           <p class="feature__text">Заполните анкету, и мы подберем<br>программу&nbsp;питания для вашего кота</p>
-          <div class="feature__form-wrapper">
-            <div class="details__wrapper">
-              <label class="details__label" for="name">Имя:<sup>*</sup></label>
-              <input class="details__input" type="text" id="name" name="auth-name" value="Барсик" required>
+          <div class="feature__form-container">
+            <div class="feature__form-wrapper">
+              <div class="details__wrapper">
+                <label class="details__label" for="name">Имя:<sup>*</sup></label>
+                <input class="details__input" type="text" id="name" name="auth-name" value="Барсик" required>
+              </div>
+              <div class="details__wrapper">
+                <label class="details__label" for="weight">Вес&nbsp;(кг):<sup>*</sup></label>
+                <input class="details__input" type="number" id="weight" name="weight" value="7" required>
+              </div>
+              <div class="details__wrapper">
+                <label class="details__label" for="age">Возраст&nbsp;(лет):</label>
+                <input class="details__input" type="number" id="age" name="age" value="7">
+              </div>
             </div>
-            <div class="details__wrapper">
-              <label class="details__label" for="weight">Вес&nbsp;(кг):<sup>*</sup></label>
-              <input class="details__input" type="number" id="weight" name="weight" value="7" required>
+            <div class="feature__fieldset-wrapper">
+              <fieldset class="feature__options options">
+                <legend class="visually-hidden">Варианты питания</legend>
+                <ul class="options__list">
+                  <li class="options__item">
+                    <label class="options__label" for="loosing-weight">
+                      <input class="options__input visually-hidden" type="radio" name="options" id="loosing-weight" value="loosing-kgs" checked>
+                      <span class="options__mark"></span>
+                      <span class="options__label-name">Похудение</span>
+                    </label>
+                  </li>
+                  <li class="options__item">
+                    <label class="options__label" for="taking-weight">
+                      <input class="options__input visually-hidden" type="radio" name="options" id="taking-weight" value="taking-kgs">
+                      <span class="options__mark"></span>
+                      <span class="options__label-name">Набор массы</span>
+                    </label>
+                  </li>
+                  <li class="options__item">
+                    <label class="options__label" for="need-advice">
+                      <input class="options__input visually-hidden" type="radio" name="options" id="need-advice" value="need-advice">
+                      <span class="options__mark"></span>
+                      <span class="options__label-name">Не знаю (Нужен ваш совет)</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
             </div>
-            <div class="details__wrapper">
-              <label class="details__label" for="age">Возраст&nbsp;(лет):</label>
-              <input class="details__input" type="number" id="age" name="age" value="7">
-            </div>
-          </div>
-          <div class="feature__fieldset-wrapper">
-            <fieldset class="feature__options options">
-              <legend class="visually-hidden">Варианты питания</legend>
-              <ul class="options__list">
-                <li class="options__item">
-                  <label class="options__label" for="loosing-weight">Похудение</label>
-                  <input class="options__input visually-hidden" type="radio" name="options" id="loosing-weight" value="loosing-kgs" checked>
-                </li>
-                <li class="options__item">
-                  <label class="options__label" for="taking-weight">Набор массы</label>
-                  <input class="options__input visually-hidden" type="radio" name="options" id="taking-weight" value="taking-kgs">
-                </li>
-                <li class="options__item">
-                  <label class="options__label" for="need-advice">Не знаю (Нужен ваш совет)</label>
-                  <input class="options__input visually-hidden" type="radio" name="options" id="need-advice" value="need-advice">
-                </li>
-              </ul>
-            </fieldset>
           </div>
         </div>
         <div class="feature__contact contact">
           <div class="contact__container container">
             <h2 class="contact__title">Контактные данные<br> (владельца кота)</h2>
-            <div class="contact__wrapper">
-              <label class="contact__label" for="email">E&nbsp;-&nbsp;mail:<sup>*</sup></label>
-              <input class="contact__input" id="email" type="email" name="email" value="kuklachev@gmail.com" required>
-            </div>
-            <div class="contact__wrapper">
-              <label class="contact__label" for="phone">Телефон:<sup>*</sup></label>
-              <input class="contact__input" id="phone" type="tel" name="phone" value="8 (960) 900-60-90" required>
+            <div class="contact__form-wrapper">
+              <div class="contact__wrapper contact__wrapper--email">
+                <label class="contact__label" for="email">E&nbsp;-&nbsp;mail:<sup>*</sup></label>
+                <input class="contact__input" id="email" type="email" name="email" value="kuklachev@gmail.com" required>
+              </div>
+              <div class="contact__wrapper contact__wrapper--phone">
+                <label class="contact__label" for="phone">Телефон:<sup>*</sup></label>
+                <input class="contact__input" id="phone" type="tel" name="phone" value="8 (960) 900-60-90" required>
+              </div>
             </div>
           </div>
         </div>

@@ -10,6 +10,14 @@
     padding-right: 30px;
     margin-bottom: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-top: 74px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 70px;
+  }
 }
 
 .feature {
@@ -20,6 +28,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -35,6 +47,11 @@
     padding: 0 40px;
     border-bottom: none;
     margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -53,6 +70,11 @@
     line-height: 60px;
     margin-bottom: 54px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+    padding: 0;
+  }
 }
 
 .feature__text {
@@ -70,5 +92,16 @@
     padding-left: 40px;
     margin-bottom: 66px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
+.feature__form-container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+}

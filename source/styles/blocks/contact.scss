@@ -2,19 +2,23 @@
   margin-bottom: 24px;
   position: relative;
 
+  &::after {
+    @include pseudo;
+    width: 100%;
+    height: 2px;
+    background-color: $additional-background;
+    top: 15px;
+    left: 0;
+    z-index: 2;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
   }
-}
 
-.contact::after {
-  @include pseudo;
-  width: 100%;
-  height: 2px;
-  background-color: $additional-background;
-  top: 15px;
-  left: 0;
-  z-index: 2;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .contact__container {
@@ -22,6 +26,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -60,16 +68,49 @@
   gap: 13px;
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &::after {
+    @include pseudo;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 12px;
+    right: 27px;
+    stroke: $primary-color;
+    fill: $primary-color;
+  }
 
   @media (min-width: $tablet-width) {
     padding-left: 40px;
     padding-right: 40px;
     gap: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    gap: 13px;
+  }
 }
 
-.contact__wrapper:not(:last-child) {
-  margin-bottom: 14px;
+.contact__wrapper--email::after {
+  background-image: url("../../icons/stack.svg#form-icon-email");
+  background-size: 17px 13px;
+}
+
+.contact__wrapper--phone::after {
+  background-image: url("../../icons/stack.svg#form-icon-phone");
+  background-size: 15px 15px;
 }
 
 .contact__label {
@@ -79,12 +120,16 @@
   color: $additional-color;
   text-transform: uppercase;
   display: block;
-  width: 78px;
+  width: 79px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     width: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 84px;
   }
 }
 
@@ -98,11 +143,20 @@
   border: 1px solid #cdcdcd;
   width: 100%;
   padding-left: 10px;
-  padding-right: 25px;
+  padding-right: 30px;
 
   @media (min-width: $tablet-width) {
     padding: 0 36px 0 15px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.contact__form-wrapper {
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 81px;
   }
 }
