@@ -148,12 +148,12 @@
     border-color: #cdcdcd;
   }
 
-  &:hover + svg {
-    fill: $additional-background;
-  }
-
   &:focus {
     border: 2px solid $additional-color;
+  }
+
+  &:focus + svg {
+    stroke: $additional-background;
   }
 
   @media (min-width: $tablet-width) {
