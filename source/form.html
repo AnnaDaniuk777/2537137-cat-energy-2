@@ -61,11 +61,11 @@
           <div class="feature__form-container">
             <div class="feature__form-wrapper">
               <div class="details__wrapper">
-                <label class="details__label" for="name">Имя:<sup>*</sup></label>
+                <label class="details__label" for="name">Имя:*</label>
                 <input class="details__input" type="text" id="name" name="auth-name" value="Барсик" required>
               </div>
               <div class="details__wrapper">
-                <label class="details__label" for="weight">Вес&nbsp;(кг):<sup>*</sup></label>
+                <label class="details__label" for="weight">Вес&nbsp;(кг):*</label>
                 <input class="details__input" type="number" id="weight" name="weight" value="7" required>
               </div>
               <div class="details__wrapper">
@@ -107,13 +107,19 @@
           <div class="contact__container container">
             <h2 class="contact__title">Контактные данные<br> (владельца кота)</h2>
             <div class="contact__form-wrapper">
-              <div class="contact__wrapper contact__wrapper--email">
-                <label class="contact__label" for="email">E&nbsp;-&nbsp;mail:<sup>*</sup></label>
+              <div class="contact__wrapper">
+                <label class="contact__label" for="email">E-mail:*</label>
                 <input class="contact__input" id="email" type="email" name="email" value="kuklachev@gmail.com" required>
+                <svg class="contact__email-icon" width="17" height="13">
+                  <use href="icons/stack.svg#form-icon-email"></use>
+                </svg>
               </div>
-              <div class="contact__wrapper contact__wrapper--phone">
-                <label class="contact__label" for="phone">Телефон:<sup>*</sup></label>
+              <div class="contact__wrapper">
+                <label class="contact__label" for="phone">Телефон:*</label>
                 <input class="contact__input" id="phone" type="tel" name="phone" value="8 (960) 900-60-90" required>
+                <svg class="contact__phone-icon" width="15" height="15">
+                  <use href="icons/stack.svg#form-icon-phone"></use>
+                </svg>
               </div>
             </div>
           </div>
@@ -165,7 +171,7 @@
               </fieldset>
               <div class="extra__button-wrapper">
                 <button class="button extra__button" type="submit">Отправить заявку</button>
-                <p class="extra__text"><sup>*</sup> — Обязательные поля</p>
+                <p class="extra__text">* — Обязательные поля</p>
               </div>
             </div>
           </div>

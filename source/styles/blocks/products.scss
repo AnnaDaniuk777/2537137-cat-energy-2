@@ -6,7 +6,7 @@
 
 .products__list {
   @include reset;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -17,6 +17,8 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    margin-bottom: 59px;
   }
 }
 
@@ -39,6 +41,12 @@
   display: block;
   padding-left: 45px;
   cursor: pointer;
+  transition-property: border-color;
+  transition-duration: 0.3s;
+
+  &:hover .products__mark {
+    border-color: #bababa;
+  }
 
   @media (min-width: $tablet-width) {
     padding-left: 60px;

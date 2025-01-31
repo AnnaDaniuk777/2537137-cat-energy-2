@@ -40,6 +40,10 @@
   top: 15px;
   right: 0;
   z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    top: 22px;
+  }
 }
 
 .comments__title {

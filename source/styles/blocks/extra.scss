@@ -2,6 +2,20 @@
   margin-bottom: 32px;
   position: relative;
 
+  &::after {
+    @include pseudo;
+    height: 2px;
+    width: 100%;
+    top: 15px;
+    right: 0;
+    background-color: $additional-background;
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
   }
@@ -9,16 +23,6 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 79px;
   }
-}
-
-.extra::after {
-  @include pseudo;
-  height: 2px;
-  width: 100%;
-  top: 15px;
-  right: 0;
-  background-color: $additional-background;
-  z-index: 2;
 }
 
 .extra__container {
@@ -67,7 +71,7 @@
 
 .extra__button {
   width: 100%;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -92,7 +96,11 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0 60px;
+    gap: 0 54px;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 0 78px;
   }
 }

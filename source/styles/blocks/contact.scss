@@ -10,6 +10,10 @@
     top: 15px;
     left: 0;
     z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -63,7 +67,8 @@
 }
 
 .contact__wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
   gap: 13px;
   padding-left: 20px;
@@ -73,28 +78,19 @@
   &:not(:last-child) {
     margin-bottom: 14px;
 
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+
     @media (min-width: $desktop-width) {
       margin-bottom: 0;
     }
   }
 
-  &::after {
-    @include pseudo;
-    width: 20px;
-    height: 20px;
-    background-color: transparent;
-    background-position: center;
-    background-repeat: no-repeat;
-    top: 12px;
-    right: 27px;
-    stroke: $primary-color;
-    fill: $primary-color;
-  }
-
   @media (min-width: $tablet-width) {
     padding-left: 40px;
     padding-right: 40px;
-    gap: 20px;
+    gap: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,14 +99,20 @@
   }
 }
 
-.contact__wrapper--email::after {
-  background-image: url("../../icons/stack.svg#form-icon-email");
-  background-size: 17px 13px;
-}
+.contact__email-icon,
+.contact__phone-icon {
+  position: absolute;
+  right: 33px;
+  top: 50%;
+  transform: translateY(-50%);
 
-.contact__wrapper--phone::after {
-  background-image: url("../../icons/stack.svg#form-icon-phone");
-  background-size: 15px 15px;
+  @media (min-width: $tablet-width) {
+    right: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 17px;
+  }
 }
 
 .contact__label {
@@ -120,16 +122,10 @@
   color: $additional-color;
   text-transform: uppercase;
   display: block;
-  width: 79px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    width: 83px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 84px;
   }
 }
 
@@ -140,16 +136,45 @@
   color: $additional-color;
   text-transform: uppercase;
   height: 45px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
   width: 100%;
-  padding-left: 10px;
+  padding-left: 14px;
   padding-right: 30px;
+  cursor: pointer;
+  transition-property: border-color;
+  transition-duration: 0.3s;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:hover + svg {
+    fill: $additional-background;
+  }
+
+  &:focus {
+    border: 2px solid $additional-color;
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 0 36px 0 15px;
+    padding: 0 34px 0 18px;
     font-size: 20px;
     line-height: 30px;
+    height: 52px;
   }
+}
+
+.input__error {
+  border: 2px solid #ff8282;
+
+  &:focus,
+  &:hover {
+    border: 2px solid #ff8282;
+  }
+}
+
+.input__error + svg {
+  stroke: #ff8282;
 }
 
 .contact__form-wrapper {
