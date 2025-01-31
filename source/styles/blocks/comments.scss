@@ -85,6 +85,7 @@
   border: 1px solid #e7e7e7;
   min-height: 150px;
   display: block;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     padding: 11px 20px;
