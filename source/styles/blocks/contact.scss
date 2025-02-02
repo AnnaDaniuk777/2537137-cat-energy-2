@@ -87,6 +87,29 @@
     }
   }
 
+  &--phone::after {
+    @include pseudo;
+    right: 33px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    mask-image: url("../../icons/stack.svg#form-icon-phone");
+    background-color: $primary-color;
+
+    @media (min-width: $tablet-width) {
+      right: 56px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 18px;
+    }
+  }
+
+  &:focus-within::after {
+    background-color: $additional-background;
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 40px;
     padding-right: 40px;
@@ -149,11 +172,31 @@
   }
 
   &:focus {
-    border: 2px solid $additional-color;
+    border-color: $additional-color;
+    outline: 1px solid $additional-color;
   }
 
-  &:focus + svg {
+  + svg {
+    stroke: $primary-color;
+  }
+
+  &.contact__input:focus + svg {
     stroke: $additional-background;
+  }
+
+  &.contact__input--error {
+    border-color: #ff8282;
+    outline: 1px solid #ff8282;
+
+    &:focus,
+    &:hover {
+      border-color: #ff8282;
+      outline: 1px solid #ff8282;
+    }
+  }
+
+  &.contact__input--error + svg {
+    stroke: #ff8282;
   }
 
   @media (min-width: $tablet-width) {
@@ -162,19 +205,6 @@
     line-height: 30px;
     height: 52px;
   }
-}
-
-.input__error {
-  border: 2px solid #ff8282;
-
-  &:focus,
-  &:hover {
-    border: 2px solid #ff8282;
-  }
-}
-
-.input__error + svg {
-  stroke: #ff8282;
 }
 
 .contact__form-wrapper {

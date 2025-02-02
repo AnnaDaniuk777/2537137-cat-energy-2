@@ -22,23 +22,7 @@
 .options__label {
   position: relative;
   display: block;
-  transition-property: border-color;
-  transition-duration: 0.3s;
-
-  &:hover .options__mark {
-    border-color: #bababa;
-  }
 }
-
-.options__label.disabled {
-  opacity: 0.3;
-}
-
-.options__label .options__input:disabled {
-  opacity: 0.3;
-}
-
-// Не получается стилизовать через псевдокласс инпут (radio/checkbox)
 
 .options__label-name {
   font-family: "Oswald", "Arial", sans-serif;
@@ -81,7 +65,7 @@
   }
 }
 
-.options__input[type="radio"]:checked + .options__mark::after {
+.options__input[type="radio"]:checked+.options__mark::after {
   @include pseudo;
   width: 13px;
   height: 13px;
@@ -96,5 +80,23 @@
     height: 18px;
     top: 10px;
     left: 10px;
+  }
+}
+
+.options__input {
+  transition-property: border-color;
+  transition-duration: 0.3s;
+
+  &:focus + .options__mark {
+    border-color: $additional-color;
+    outline: 1px solid $additional-color;
+  }
+
+  &:hover + .options__mark {
+    border-color: #bababa;
+  }
+
+  &:disabled ~ span {
+    opacity: 0.3;
   }
 }

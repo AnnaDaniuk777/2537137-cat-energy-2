@@ -32,3 +32,7 @@ body {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+input::placeholder {
+  color: $additional-color;
+}

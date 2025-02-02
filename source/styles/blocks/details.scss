@@ -41,7 +41,8 @@
   }
 
   &:focus {
-    border: 2px solid $additional-color;
+    border-color: $additional-color;
+    outline: 1px solid $additional-color;
   }
 
   @media (min-width: $tablet-width) {
