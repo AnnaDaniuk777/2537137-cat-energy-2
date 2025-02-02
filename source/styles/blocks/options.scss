@@ -65,7 +65,7 @@
   }
 }
 
-.options__input[type="radio"]:checked+.options__mark::after {
+.options__input[type="radio"]:checked + .options__mark::after {
   @include pseudo;
   width: 13px;
   height: 13px;
